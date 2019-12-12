@@ -16,32 +16,26 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
 
-  <dependencyManagement>
-    <dependencies>
-      <!-- Camel BOM -->
-      <dependency>
-        <groupId>org.apache.camel</groupId>
-        <artifactId>camel-parent</artifactId>
-        <version>3.0.0</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+
 
   <dependencies>
-
     <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+   <!-- <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-main</artifactId>
-    </dependency>
+    </dependency>-->
 
     <!-- logging -->
-    <dependency>
+    <!--<dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <scope>runtime</scope>
@@ -55,14 +49,16 @@
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-slf4j-impl</artifactId>
       <scope>runtime</scope>
-    </dependency>
+    </dependency>-->
 
     <!-- testing -->
-    <dependency>
+    <!--<dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-test</artifactId>
       <scope>test</scope>
-    </dependency>
+    </dependency>-->
+
+
   </dependencies>
 
   <build>
@@ -88,7 +84,7 @@
       </plugin>
 
       <!-- Allows the example to be run via 'mvn compile exec:java' -->
-      <plugin>
+      <!--<plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.6.0</version>
@@ -96,7 +92,7 @@
           <mainClass>cn.wonderful.leetcode.MainApp</mainClass>
           <includePluginDependencies>false</includePluginDependencies>
         </configuration>
-      </plugin>
+      </plugin>-->
 
     </plugins>
   </build>
