@@ -1,7 +1,7 @@
 package cn.wonderful.leetcode;
 
 
-import main.java.cn.wonderful.leetcode.Day04;
+import cn.wonderful.leetcode.Day04;
 
 /**
  * @ClassName Test
